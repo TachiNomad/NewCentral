@@ -1,0 +1,267 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: black;
+  --blue: rgb(0, 183, 255);
+  --gray: rgb(90, 89, 89);
+  --green: rgb(87, 173, 145);
+}
+
+@media (max-width: 680px) {
+  .bottom-right {
+    visibility: hidden;
+  }
+  .text {
+    font-size: 15px;
+    margin-left: 25px;
+    top: 10px;
+    left: 10px;
+    position: relative;
+    display: inline-block;
+    width: 320px;
+    height: 260px;
+  }
+  .small-head, .small-head1 {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 681px) {
+  h2 {
+    font-size: 35px;
+  }
+  li {
+    font-size: 10px;
+  }
+  .text {
+    font-size: 20px;
+    margin-left: 25px;
+    top: 10px;
+    left: 10px;
+    position: relative;
+    display: inline-block;
+    width: 500px;
+    height: 450px;
+  }
+  .small-head, .small-head1 {
+    visibility: hidden;
+  }
+  .container2 {
+    left: 100px;
+    grid-template-columns: repeat(1, 60px);
+  }
+}
+
+@media (min-width: 1401px) {
+  .text {
+      font-size: 30px;
+      margin-left: 25px;
+      top: 10px;
+      left: 200px;
+      position: relative;
+      display: inline-block;
+      width: 1000px;
+      height: 250px;
+  }
+  .container2 {
+    left: 400px;
+    grid-template-columns: repeat(2, 600px);
+  }
+  .small-head, .small-head1 {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1700px) {
+  .text {
+      font-size: 30px;
+      margin-left: 25px;
+      top: 10px;
+      left: 280px;
+      position: relative;
+      display: inline-block;
+      width: 1000px;
+      height: 250px;
+  }
+  .container2 {
+    left: 400px;
+    grid-template-columns: repeat(2, 600px);
+  }
+  .small-head, .small-head1 {
+    visibility: visible;
+  }
+}
+
+
+
+
+
+
+.header {
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--gray);
+  color: #ffffff;
+}
+
+.header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+.header h1 .seo {
+  color: #d9dcd6;
+}
+
+.header div {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.header div ul {
+  list-style-type: none;
+}
+
+.header div ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.navi {
+  float: right;
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: 450;
+  margin-block: 50px;
+}
+
+.hero {
+  height: 800px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 200px;
+  right: 200px;
+  font-size: 70px;
+  color: var(--blue);
+  display: inline-block;
+  width: 600px;
+  height: 100px;
+  background-color:var(--gray);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+
+.small-head {
+  color: var(--blue);
+  position: relative;
+  bottom: 110px;
+  left: 110px;
+  font-size: 70px;
+  display: inline-block;
+  width: 310px;
+  height: 90px;
+  background-color:var(--gray);
+}
+
+.text {
+  color: white;
+  background-color:var(--gray);
+}
+
+.small-head1 {
+  color: var(--blue);
+  position: relative;
+  top: 110px;
+  left: 110px;
+  font-size: 70px;
+  display: inline-block;
+  width: 170px;
+  height: 90px;
+  background-color:var(--gray);
+}
+
+
+
+
+.container2 {
+  position: relative;
+  bottom: 10px;
+  display: grid;
+  grid-auto-rows: 420px;
+  column-gap: 2rem;
+  max-height: 100%;
+}
+
+.bottom-left {
+  position: relative;
+  bottom: 90px;
+  left: 16px;
+  color: var(--green);
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  background-color:var(--gray);
+}
+
+ul {
+  list-style: none;
+  }
+
+
+
+
+
+
+  footer {
+    width: 100%;
+    height: 120px;
+    background-color: var(--blue);
+    color: white;
+    position: sticky; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    z-index: 10;
+}
